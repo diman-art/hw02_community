@@ -1,6 +1,5 @@
 {% extends 'base.html' %}
-  {% block content %}
-    <h1>{{ text_one }}</h1>
+{% block content %}
     {% for post in posts %}
       {% include 'includes/post.html' %}
       {% if post.group %}
@@ -9,6 +8,6 @@
       {% if not forloop.last %}<hr>
       {% endif %}
     {% endfor %}  
-  {% endblock %}
+{% endblock %}
      
     
