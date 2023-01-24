@@ -8,7 +8,7 @@
   <h1>{{ text_two }}</h1>
   {{ group.title }}
   {% for post in posts %}
-    {% include 'posts/includes/post.html' %}
+    {% include 'includes/post.html' %}
     {% if not forloop.last %}<hr>
     {% endif %}
   {% endfor %} 
